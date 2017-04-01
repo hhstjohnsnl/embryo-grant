@@ -1,0 +1,10 @@
+@include media-breakpoint-up(lg) {
+  main {
+    padding-left: 2rem !important;
+  }
+  .sidebar {
+    padding-right: 2rem;
+    border-bottom: 0;
+    border-right: 2px solid #424242;
+  }
+}
