@@ -3,12 +3,12 @@ import React, { PropTypes } from 'react'
 const Badges = React.createClass({
   render () {
     const skills = this.props.skills.map( function(skill) { //yes, I don't like that fat arrow (:
-      return <div className="badge badge-pill badge-default">{skill}</div>
+      return <li className="badge badge-pill badge-default">{skill}</li>
     })
     return (
-      <div style={{margin: '1rem 0'}}>
+      <ul style={{margin: '1rem 0', padding: 0}}>
         {skills}
-      </div>
+      </ul>
     )
   }
 })
