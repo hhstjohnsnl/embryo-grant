@@ -1,7 +1,2 @@
-# DALREACTO boilerplate
-React boilerplate.
-
-## Installation
-1. Clone this repo
-2. `npm install`
-3. `npm start`
+# dalbinaco.com
+Personal website at [dalbinaco.com](http://dalbinaco.com)
