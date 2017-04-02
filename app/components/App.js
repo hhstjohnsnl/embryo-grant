@@ -6,9 +6,9 @@ const App = React.createClass({
   render () {
     return (
       <div className="container" style={{paddingTop:64}}>
-        <div className="row">
-          <div className="col-12 col-lg-3"><Sidebar /></div>
-          <main className="col-12 col-lg-9">
+        <div className="row align-items-start">
+          <div className="col-12 col-lg-4"><Sidebar /></div>
+          <main className="col-12 col-lg-8">
             {this.props.children}
           </main>
         </div>
