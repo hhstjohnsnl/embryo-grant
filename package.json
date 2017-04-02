@@ -9,8 +9,7 @@
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:dev": "webpack-dev-server --inline --content-base dist/ --history-api-fallback",
-    "start:prod": "webpack && node server.js",
-    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
+    "start:prod": "webpack && node server.js"
   },
   "author": "DALBINACO",
   "license": "ISC",
