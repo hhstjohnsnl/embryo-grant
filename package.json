@@ -4,8 +4,9 @@
   "description": "Personal website",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --port 8000 --content-base dist/ --history-api-fallback",
-    "build": "webpack -p"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:dev": "webpack-dev-server --inline --content-base dist/ --history-api-fallback",
+    "start:prod": "webpack && node server.js"
   },
   "author": "DALBINACO",
   "license": "ISC",
