@@ -1,6 +1,9 @@
 {
   "name": "dalbinaco.com",
   "version": "0.1.0",
+  "engines": {
+    "node": "7.3.0"
+  },
   "description": "Personal website",
   "main": "index.js",
   "scripts": {
