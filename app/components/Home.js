@@ -1,13 +1,16 @@
 import React, { PropTypes } from 'react'
 import Badges from './Badges.js'
+import Projects from './Projects.js'
 
 const Home = React.createClass({
   render () {
     return (
       <div>
-        <h1>Crio UIs e websites responsivos.</h1>
-        <h2>Projetos</h2>
-        <a href="http://tripby.org">TRIPBY.org</a>
+        <div className="separator"></div>
+        <section>
+          <h1>Projetos</h1>
+          <Projects />
+        </section>
       </div>
     )
   }
