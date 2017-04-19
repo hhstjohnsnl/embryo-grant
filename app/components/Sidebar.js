@@ -20,7 +20,7 @@ const Sidebar = React.createClass({
               </p>
               <Badges skills={['JavaScript', 'React', 'webpack', 'SASS', 'Git', 'WordPress']} />
               <p>
-                <a href="mailto:mateus@dalbinaco.com">mateus@dalbinaco.com</a><br/>+55 32 9 8876-8324
+                <a href="mailto:mateus@dalbinaco.com">mateus@dalbinaco.com</a><br/>+55 47 9 9718-2093
                 </p>
                 <ul className="row" style={{padding: 0, listStyleType: 'none'}}>
                   <li className="col" style={{flex: 0}}><a href="https://github.com/dalbinaco"><img src={githubLogo} alt="" height="24"/></a></li>
