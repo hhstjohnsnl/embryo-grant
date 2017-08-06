@@ -18,7 +18,7 @@ const Sidebar = React.createClass({
             <p>
               <strong className="text-uppercase">Mateus Dal Bianco</strong><br/>Desenvolvedor front-end
               </p>
-              <Badges skills={['JavaScript', 'React', 'webpack', 'SASS', 'Git', 'WordPress']} />
+              <Badges skills={['JavaScript', 'React', 'Redux', 'webpack', 'SASS', 'Git', 'Node.js']} />
               <p>
                 <a href="mailto:mateus@dalbinaco.com">mateus@dalbinaco.com</a><br/>+55 47 9 9718-2093
                 </p>
