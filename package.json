@@ -8,7 +8,8 @@
     "gatsby": "^1.9.36",
     "gatsby-link": "^1.6.15",
     "gatsby-plugin-react-helmet": "^1.0.5",
-    "gatsby-plugin-sass": "^1.0.12"
+    "gatsby-plugin-sass": "^1.0.12",
+    "gh-pages": "^1.0.0"
   },
   "keywords": [
     "gatsby"
@@ -19,7 +20,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public"
   },
   "devDependencies": {
     "prettier": "^1.6.1"
