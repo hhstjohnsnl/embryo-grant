@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react'
 const Badges = React.createClass({
   render () {
     const skills = this.props.skills.map( (skill, index) =>
-    <li key={index} className="badge badge-pill badge-default">
+    <li key={index} className="badge badge-pill badge-light">
       {skill}
     </li>
   )

@@ -1,9 +1,9 @@
 body {
   font-family: 'Fira Mono', monospace;
+  color: #fff;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fira Sans', sans-serif;
-  color: #fff;
   font-weight: 300;
 }
 p {
@@ -11,4 +11,11 @@ p {
 }
 p strong {
   font-weight: 500;
+}
+a {
+  color: $cyan !important;
+}
+a:hover {
+  opacity: 0.75;
+  text-decoration: none;
 }
