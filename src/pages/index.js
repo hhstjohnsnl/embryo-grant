@@ -8,7 +8,7 @@ const IndexPage = () => (
     <div className="separator d-md-none" />
     <section>
       <p className="lead">Escrevo interfaces precisas, interativas e consistentes</p>
-      <Badges skills={['JavaScript', 'React', 'Redux', 'webpack', 'SASS', 'Git', 'Node.js']} />
+      <Badges skills={['JavaScript', 'React', 'Redux', 'Jest', 'webpack', 'SASS', 'Git', 'Node.js']} />
     </section>
     <div className="separator"></div>
     <section>
