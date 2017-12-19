@@ -1,2 +1,18 @@
-$grey: #070707;
-$cyan: #44bce3;
+$colors: (
+  grey:   #070707,
+  cyan:  #44bce3,
+  green: #3CF0B9,
+  white: #fff,
+);
+
+@each $value in $colors {
+  .text-#{nth($value, 1)} {
+    color: nth($value, 2);
+  }
+
+  .bg-#{nth($value, 1)} {
+    background-color: nth($value, 2);
+  }
+
+
+}

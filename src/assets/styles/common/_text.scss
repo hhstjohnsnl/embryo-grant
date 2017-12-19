@@ -13,9 +13,9 @@ p strong {
   font-weight: 500;
 }
 a {
-  color: $cyan !important;
+  color: map-get($colors, cyan) !important;
 }
 a:hover {
-  opacity: 0.75;
+  color: map-get($colors, green) !important;
   text-decoration: none;
 }
