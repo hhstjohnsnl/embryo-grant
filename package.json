@@ -1,0 +1,32 @@
+{
+  "name": "dalbinaco.com",
+  "description": "Personal website",
+  "version": "0.2.0",
+  "author": "Mateus Dal Bianco <mateus@dalbinaco.com>",
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "gatsby": "^1.9.36",
+    "gatsby-link": "^1.6.15",
+    "gatsby-plugin-google-analytics": "^1.0.7",
+    "gatsby-plugin-react-helmet": "^1.0.5",
+    "gatsby-plugin-sass": "^1.0.12",
+    "gh-pages": "^1.0.0",
+    "react-typist": "^2.0.4",
+    "typed.js": "^2.0.6"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public -b master"
+  },
+  "devDependencies": {
+    "prettier": "^1.6.1"
+  }
+}

@@ -1,0 +1,16 @@
+.btn {
+  cursor: pointer;
+  padding: 0.7rem 0.85rem;
+  font-weight: bold;
+}
+.btn-primary {
+  color: rgba(0,0,0,0.75);
+  background-color: map-get($colors, cyan);
+  border-color: map-get($colors, cyan);
+}
+.btn-primary:hover {
+  color: rgba(0,0,0,0.75);
+  background-color: map-get($colors, green);
+  border-color: map-get($colors, green);
+  transition: 0.2s;
+}
