@@ -20,7 +20,7 @@ const IndexPage = () => (
         </Typist>
       </h1>
       </div>
-      <button className="btn btn-primary mt-3" style={{fontSize: '1.1rem'}}>Let's talk!</button>
+      {/* <button className="btn btn-primary mt-3" style={{fontSize: '1.1rem'}}>Let's talk!</button> */}
     </section>
     <div className="separator"></div>
     <section>
