@@ -13,7 +13,7 @@ import linkedinLogo from '../assets/img/social/linkedin.svg'
 const TemplateWrapper = ({ children }) => (
   <div className="d-flex flex-column" style={{minHeight: '100vh'}}>
     <Helmet
-      title="dlbn.co"
+      title="dlbn.co — Front-end web development"
       meta={[
         { name: 'description', content: 'Front-end developer. I build websites, webapps and beautiful UIs using the latest technology.' },
         { name: 'keywords', content: 'frontend development, front-end, javascript, react, redux, node.js' },
