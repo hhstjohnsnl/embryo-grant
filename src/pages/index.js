@@ -8,11 +8,13 @@ import 'react-typist/dist/Typist.css'
 class IndexPage extends React.Component {
   constructor() {
     super()
-    if (window.location.pathname === '/') {
-      if (navigator.language === 'pt-BR') {
-        window.___history.replace('/pt/')
-      } else {
-        window.___history.replace('/en/')
+    if (typeof window !== `undefined`) {
+      if (window.location.pathname === '/') {
+        if (navigator.language === 'pt-BR') {
+          window.___history.replace('/pt/')
+        } else {
+          window.___history.replace('/en/')
+        }
       }
     }
   }
