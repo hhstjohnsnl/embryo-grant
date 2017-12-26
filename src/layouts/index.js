@@ -53,7 +53,7 @@ const TemplateWrapper = ({ children }) => {
           {children()}
         </main>
       </div>
-      <footer className="py-3">
+      <footer className="pt-5 pb-3">
         <div className="container">
           <ul className="row" style={{padding: 0, listStyleType: 'none'}}>
             <li className="col" style={{flex: 0}}><a href="https://github.com/dalbinaco"><img src={githubLogo} alt="" height="18"/></a></li>
