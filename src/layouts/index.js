@@ -16,21 +16,25 @@ import githubLogo from '../assets/img/social/github.svg'
 import instagramLogo from '../assets/img/social/instagram.svg'
 import linkedinLogo from '../assets/img/social/linkedin.svg'
 
-const locale = window.location.pathname.split('/')[1]
-const defaultLocale = 'en'
 
 addLocaleData([...en, ...pt,])
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children }) => {
+  const locale = typeof window == `undefined` ? 'en' : window.location.pathname.split('/')[1]
+  const defaultLocale = 'en'
+  return (
   <IntlProvider locale={locale} defaultLocale="en" messages={messages}>
     <div className="d-flex flex-column" style={{minHeight: '100vh'}}>
       <Helmet
+        htmlAttributes={{
+          lang: locale || defaultLocale
+        }}
         title={messages[locale || defaultLocale].meta.title}
         meta={[
           { name: 'description', content: messages[locale || defaultLocale].meta.description },
           { name: 'keywords', content: 'frontend development, front-end, javascript, react, redux, node.js' },
-        ]}
-      />
+        ]}>
+      </Helmet>
       <header>
         <div className="container py-4 py-md-5">
           <div className="d-flex align-items-center">
@@ -62,7 +66,7 @@ const TemplateWrapper = ({ children }) => (
       </footer>
     </div>
   </IntlProvider>
-)
+)}
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
