@@ -6,7 +6,8 @@ const messages = {
     title: 'Eu crio',
     services: [
       'websites', 'webapps', 'belas interfaces'
-    ]
+    ],
+    button: 'Vamos conversar!'
   },
   services: [
     {
@@ -27,4 +28,4 @@ const messages = {
   ]
 }
 
-export default (props) => <IndexPage messages={messages} />
+export default (props) => <IndexPage messages={messages} locale='pt'/>

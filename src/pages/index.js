@@ -38,7 +38,7 @@ class IndexPage extends React.Component {
                 </Typist>
               </h1>
             </div>
-            {/* <button className="btn btn-primary mt-3" style={{fontSize: '1.1rem'}}>Let's talk!</button> */}
+            <Link to={`/${this.props.locale}/contact`} className="btn btn-primary mt-3" style={{fontSize: '1.1rem'}}>{messages.tagline.button}</Link>
           </section>
           <div className="separator"></div>
           <section>
