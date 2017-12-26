@@ -10,7 +10,7 @@ class IndexPage extends React.Component {
     super()
     if (typeof window !== `undefined`) {
       if (window.location.pathname === '/') {
-        if (navigator.language === 'pt-BR') {
+        if (navigator.language === 'pt-BR' || navigator.language === 'pt') {
           window.___history.replace('/pt/')
         } else {
           window.___history.replace('/en/')
