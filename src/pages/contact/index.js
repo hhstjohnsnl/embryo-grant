@@ -63,7 +63,7 @@ class Contact extends React.Component {
           <h1>{messages.title}</h1>
           <div className="separator" />
           {this.state.sent ? (
-            <p className="lead">👏 {messages.form.submit.sent}</p>
+            <p className="lead">👏🎉 {messages.form.submit.sent}</p>
           ) : (
             <form onSubmit={this.handleSubmit} className="row" style={{maxWidth: 800}}>
               <input type="text" name="_gotcha" style={{display:'none'}} />
