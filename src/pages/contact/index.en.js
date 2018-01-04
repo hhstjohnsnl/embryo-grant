@@ -44,7 +44,7 @@ const messages = {
     submit: {
       label: 'Submit',
       loading: 'Sending...',
-      sent: 'Message sent! We will talk back to you soon.'
+      sent: 'Message sent! We will return to you soon.'
     },
     errors: {
       invalidMail: 'Please use a valid email address'
