@@ -4,6 +4,7 @@
   "version": "0.2.0",
   "author": "Mateus Dal Bianco <mateus@dalbinaco.com>",
   "dependencies": {
+    "axios": "^0.17.1",
     "bootstrap": "4.0.0-beta",
     "gatsby": "^1.9.36",
     "gatsby-link": "^1.6.15",
