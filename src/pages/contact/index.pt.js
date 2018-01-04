@@ -45,6 +45,9 @@ const messages = {
       label: 'Enviar',
       loading: 'Enviando...',
       sent: 'Mensagem enviada! Aguarde nosso retorno.'
+    },
+    errors: {
+      invalidMail: 'Por favor, use um email válido'
     }
   }
 }

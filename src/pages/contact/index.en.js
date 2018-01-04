@@ -45,6 +45,9 @@ const messages = {
       label: 'Submit',
       loading: 'Sending...',
       sent: 'Message sent! We will talk back to you soon.'
+    },
+    errors: {
+      invalidMail: 'Please use a valid email address'
     }
   }
 }

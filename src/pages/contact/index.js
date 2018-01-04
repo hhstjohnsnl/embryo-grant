@@ -12,43 +12,48 @@ class Contact extends React.Component {
   }
   handleSubmit(e) {
     e.preventDefault()
-    this.setState({loading: true})
-    const data = {
-      contact: `
-      Name: ${e.target.name.value || 'n/a'}
-      Company: ${e.target.company.value || 'n/a'}
-      Phone: ${e.target.phone.value || 'n/a'}
-      Budget: ${e.target.budget.value || 'n/a'}
-      Type: ${e.target.type.value || 'n/a'}
-      Description: ${e.target.description.value || 'n/a'}
-      `,
-      _subject: '🚀 dlbn.co contact',
+    const mailregex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    if (e.target.email.value.match(mailregex)) {
+      this.setState({loading: true})
+      const data = {
+        contact: `
+        Name: ${e.target.name.value || 'n/a'}
+        Company: ${e.target.company.value || 'n/a'}
+        Phone: ${e.target.phone.value || 'n/a'}
+        Budget: ${e.target.budget.value || 'n/a'}
+        Type: ${e.target.type.value || 'n/a'}
+        Description: ${e.target.description.value || 'n/a'}
+        `,
+        _subject: '🚀 dlbn.co contact',
 
-    }
-    if (e.target.email.value !== '') {
-      data.email = e.target.email.value
-    }
-    if (e.target._gotcha.value !== '') {
-      data._gotcha = e.target._gotcha.value
-    }
-    axios({
-      method: 'post',
-      url: 'https://formspree.io/mateus@dalbinaco.com',
-      headers: {
-        'Accept': 'application/json'
-      },
-      data
-    }).then((response) => {
-      if (response.data.success && response.data.success === 'email sent') {
-        this.setState({
-          sent: true
-        })
       }
-    }).catch((err) => {
-      this.setState({
-        error: err
+      if (e.target.email.value !== '') {
+        data.email = e.target.email.value
+      }
+      if (e.target._gotcha.value !== '') {
+        data._gotcha = e.target._gotcha.value
+      }
+      axios({
+        method: 'post',
+        url: 'https://formspree.io/mateus@dalbinaco.com',
+        headers: {
+          'Accept': 'application/json'
+        },
+        data
+      }).then((response) => {
+        if (response.data.success && response.data.success === 'email sent') {
+          this.setState({
+            sent: true
+          })
+        }
+      }).catch((err) => {
+        console.log(err)
       })
-    })
+    } else {
+      this.setState({
+        error: this.props.messages.form.errors.invalidMail
+      })
+    }
   }
   render() {
     const messages = this.props.messages
@@ -58,7 +63,7 @@ class Contact extends React.Component {
           <h1>{messages.title}</h1>
           <div className="separator" />
           {this.state.sent ? (
-            <h1>👏 {messages.form.submit.sent}</h1>
+            <p className="lead">👏 {messages.form.submit.sent}</p>
           ) : (
             <form onSubmit={this.handleSubmit} className="row" style={{maxWidth: 800}}>
               <input type="text" name="_gotcha" style={{display:'none'}} />
@@ -117,6 +122,7 @@ class Contact extends React.Component {
                   {!this.state.loading ? messages.form.submit.label : messages.form.submit.loading}
                 </button>
               </div>
+              {this.state.error ? (<div className="col-12 mt-3">⚠️ {this.state.error}</div>) : null}
             </form>
           )}
         </div>
