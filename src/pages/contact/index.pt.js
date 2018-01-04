@@ -42,7 +42,9 @@ const messages = {
       helper: 'Descreva o projeto e seus objetivos'
     },
     submit: {
-      label: 'Enviar'
+      label: 'Enviar',
+      loading: 'Enviando...',
+      sent: 'Mensagem enviada! Aguarde nosso retorno.'
     }
   }
 }

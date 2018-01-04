@@ -42,7 +42,9 @@ const messages = {
       helper: 'Describe your project and goals'
     },
     submit: {
-      label: 'Submit'
+      label: 'Submit',
+      loading: 'Sending...',
+      sent: 'Message sent! We will talk back to you soon.'
     }
   }
 }
