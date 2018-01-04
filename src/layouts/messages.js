@@ -6,7 +6,9 @@ module.exports = {
     },
     nav: {
       projects: 'Projects',
-      about: 'About'
+      about: 'About',
+      contact: 'Contact'
+
     }
   },
   pt: {
@@ -16,7 +18,8 @@ module.exports = {
     },
     nav: {
       about: 'Sobre',
-      projects: 'Projetos'
+      projects: 'Projetos',
+      contact: 'Contato'
     }
   }
 }
