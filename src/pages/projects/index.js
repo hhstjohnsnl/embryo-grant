@@ -1,5 +1,6 @@
 import React from 'react'
 import Project from '../../components/Project'
+import Helmet from 'react-helmet'
 
 const Projects = (props) => {
   const messages = props.messages
@@ -7,6 +8,9 @@ const Projects = (props) => {
   if (messages && projects) {
     return (
       <div>
+        <Helmet>
+          <title>{messages.title}</title>
+        </Helmet>
         <h1>{messages.title}</h1>
         <div className="separator"></div>
         <section>

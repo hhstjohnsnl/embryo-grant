@@ -66,6 +66,9 @@ class Contact extends React.Component {
     if (messages) {
       return (
         <div>
+          <Helmet>
+            <title>{messages.title}</title>
+          </Helmet>
           <h1>{messages.title}</h1>
           <div className="separator" />
           {this.state.sent ? (

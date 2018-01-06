@@ -6,6 +6,9 @@ const About = (props) => {
   if (messages) {
     return (
       <div>
+        <Helmet>
+          <title>{messages.title}</title>
+        </Helmet>
         <h1>{messages.title}</h1>
         <div className="separator"></div>
         <section className="mb-3">
