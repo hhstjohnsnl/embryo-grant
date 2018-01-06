@@ -18,6 +18,11 @@ class IndexPage extends React.Component {
       }
     }
   }
+  trackCta() {
+    if (typeof window !== 'undefined' && window.ga) {
+      window.ga('send', 'event', 'Contact', 'Click CTA to go to contact page')
+    }
+  }
   render() {
     const messages = this.props.messages
     if (messages) {
@@ -38,7 +43,12 @@ class IndexPage extends React.Component {
                 </Typist>
               </h1>
             </div>
-            <Link to={`/${this.props.locale}/contact`} className="btn btn-primary mt-3" style={{fontSize: '1.1rem'}}>{messages.tagline.button}</Link>
+            <Link
+              to={`/${this.props.locale}/contact`}
+              className="btn btn-primary mt-3"
+              style={{fontSize: '1.1rem'}}
+              onClick={this.trackCta}
+              >{messages.tagline.button}</Link>
           </section>
           <div className="separator"></div>
           <section>

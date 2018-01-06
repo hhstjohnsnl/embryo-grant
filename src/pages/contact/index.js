@@ -12,6 +12,9 @@ class Contact extends React.Component {
   }
   handleSubmit(e) {
     e.preventDefault()
+    if (typeof window !== 'undefined' && window.ga) {
+      window.ga('send', 'event', 'Contact', 'Submit form')
+    }
     const mailregex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     if (e.target.email.value.match(mailregex)) {
       this.setState({loading: true})
@@ -45,6 +48,9 @@ class Contact extends React.Component {
           this.setState({
             sent: true
           })
+          if (typeof window !== 'undefined' && window.ga) {
+            window.ga('send', 'event', 'Contact', 'Submit form successful')
+          }
         }
       }).catch((err) => {
         console.log(err)
