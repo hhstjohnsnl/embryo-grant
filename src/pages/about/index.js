@@ -1,5 +1,6 @@
 import React from 'react'
 import Badges from '../../components/Badges'
+import Helmet from 'react-helmet'
 
 const About = (props) => {
   const messages = props.messages

@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import Helmet from 'react-helmet'
 
 class Contact extends React.Component {
   constructor() {
