@@ -63,19 +63,6 @@ class IndexPage extends React.Component {
               ))}
             </div>
           </section>
-          <div className="separator"></div>
-          <section>
-            <h1 className="mb-4">{messages.tech.title}</h1>
-            <div className="row" style={{lineHeight: 2}}>
-              {messages.tech.technologies.map((technology, index) => (
-                <div className="col-12 col-md-2 col-lg-1 mb-4" key={index}>
-                  <a href={technology.url}>
-                    <img style={{filter: 'invert(100%)'}} src={`https://unpkg.com/simple-icons@latest/icons/${technology.icon}.svg`} width="48" height="48" />
-                </a>
-              </div>
-              ))}
-            </div>
-          </section>
         </div>
       )
     }
