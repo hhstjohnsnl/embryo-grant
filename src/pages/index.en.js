@@ -5,7 +5,7 @@ const messages = {
   tagline: {
     title: 'I build',
     services: [
-      'websites', 'webapps', 'beautiful UIs'
+      'websites', 'web apps', 'beautiful UIs'
     ],
     button: `Let's talk!`
   },
