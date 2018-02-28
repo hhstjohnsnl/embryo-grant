@@ -67,7 +67,7 @@ const TemplateWrapper = ({ children }) => {
                 <li className="col" style={{flex: 0}}><a href="https://instagram.com/dlbnco"><img src={instagramLogo} alt="" height="18"/></a></li>
                 <li className="col" style={{flex: 0}}><a href="https://twitter.com/dlbnco"><img src={twitterLogo} alt="" height="18"/></a></li>
               </ul>
-              <a href="mailto:mateus@dalbinaco.com">mateus@dalbinaco.com</a>
+              <p className="mb-0">mateus@dalbinaco.com</p>
             </div>
           </footer>
         </div>
