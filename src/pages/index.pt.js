@@ -5,7 +5,7 @@ const messages = {
   tagline: {
     title: 'Eu crio',
     services: [
-      'websites', 'webapps', 'belas interfaces'
+      'websites', 'aplicativos web', 'belas interfaces'
     ],
     button: 'Vamos conversar!'
   },
