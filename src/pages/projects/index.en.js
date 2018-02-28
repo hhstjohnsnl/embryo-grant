@@ -2,7 +2,7 @@ import React from 'react'
 import Projects from '../projects'
 
 const messages = {
-  title: 'Projects'
+  title: 'Featured projects'
 }
 
 const projects = [
