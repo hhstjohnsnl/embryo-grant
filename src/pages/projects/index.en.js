@@ -7,6 +7,16 @@ const messages = {
 
 const projects = [
   {
+    title: 'Panthera',
+    url: 'https://panthera.dlbn.co',
+    description: (
+      <div>
+        <p>Panthera is a website development service focused on simplicity and speed. The whole process takes 3 days or less, from hiring to delivery.</p>
+        <p>The client has to spend just 30 minutes in a phone call so we can understand how to build the website and it's content. It's best suited to freelancers and small companies.</p>
+      </div>
+    )
+  },
+  {
     title: 'TRIPBY',
     url: 'http://tripby.org',
     description: (

@@ -7,6 +7,16 @@ const messages = {
 
 const projects = [
   {
+    title: 'Panthera',
+    url: 'https://panthera.dlbn.co',
+    description: (
+      <div>
+        <p>Panthera é um serviço de desenvolvimento de websites focado em simplicidade e agilidade. O processo leva no máximo 3 dias, desde a contratação até a entrega.</p>
+        <p>O cliente só precisa gastar 30 minutos em uma chamada de voz para que possamos entender como desenvolver o site e seu conteúdo. É ideal para profissionais autônomos e pequenas empresas.</p>
+      </div>
+    )
+  },
+  {
     title: 'TRIPBY',
     url: 'http://tripby.org',
     description: (
