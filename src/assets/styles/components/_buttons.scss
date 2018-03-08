@@ -4,13 +4,19 @@
   font-weight: bold;
 }
 .btn-primary {
-  color: rgba(0,0,0,0.75);
+  color: rgba(0,0,0,0.75) !important;
   background-color: map-get($colors, cyan);
   border-color: map-get($colors, cyan);
 }
 .btn-primary:hover {
-  color: rgba(0,0,0,0.75);
+  color: rgba(0,0,0,0.75) !important;
   background-color: map-get($colors, green);
   border-color: map-get($colors, green);
   transition: 0.2s;
+}
+
+.btn:disabled, .btn:disabled:hover {
+  cursor: not-allowed;
+  background-color: map-get($colors, lightGrey);
+  border-color: map-get($colors, lightGrey);
 }

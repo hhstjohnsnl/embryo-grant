@@ -15,6 +15,13 @@ module.exports = {
       options: {
         trackingId: 'UA-92895808-1',
       },
+    },
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'en',
+        useLangKeyLayout: false
+      }
     }
   ],
 }

@@ -1,16 +1,29 @@
 {
-  "name": "dalbinaco.com",
+  "name": "dlbn.co",
   "description": "Personal website",
   "version": "0.2.0",
   "author": "Mateus Dal Bianco <mateus@dalbinaco.com>",
   "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
     "bootstrap": "4.0.0-beta",
-    "gatsby": "^1.9.36",
+    "compression": "^1.7.2",
+    "express": "^4.16.2",
+    "express-force-https": "^1.0.0",
+    "express-recaptcha": "^3.0.1",
+    "gatsby": "^1.9.183",
     "gatsby-link": "^1.6.15",
     "gatsby-plugin-google-analytics": "^1.0.7",
-    "gatsby-plugin-react-helmet": "^1.0.5",
+    "gatsby-plugin-i18n": "^0.4.1",
+    "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-sass": "^1.0.12",
     "gh-pages": "^1.0.0",
+    "mailgun.js": "^2.0.1",
+    "react-async-script": "^0.9.1",
+    "react-google-recaptcha": "^0.9.9",
+    "react-helmet": "^5.2.0",
+    "react-intl": "^2.4.0",
+    "react-simple-icons": "^1.0.0-beta.5",
     "react-typist": "^2.0.4",
     "typed.js": "^2.0.6"
   },
@@ -24,7 +37,8 @@
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "start": "node server",
+    "postinstall": "gatsby build"
   },
   "devDependencies": {
     "prettier": "^1.6.1"
