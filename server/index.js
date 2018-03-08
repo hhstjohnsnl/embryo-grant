@@ -1,7 +1,7 @@
 const express = require('express');
 const compression = require('compression')
 const bodyParser = require('body-parser');
-const secure = require('express-force-https');
+const secure = require('express-force-ssl');
 const Recaptcha = require('express-recaptcha');
 
 const app = express();
