@@ -1,15 +1,23 @@
 import React from 'react'
 import axios from 'axios'
 import Helmet from 'react-helmet'
+import ReCAPTCHA from 'react-google-recaptcha'
 
 class Contact extends React.Component {
   constructor() {
     super()
     this.state = {
       sent: false,
-      loading: false
+      loading: false,
+      recaptcha: null
     }
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleCaptcha = this.handleCaptcha.bind(this)
+  }
+  handleCaptcha(value) {
+    this.setState({
+      recaptcha: value
+    })
   }
   handleSubmit(e) {
     e.preventDefault()
@@ -20,7 +28,10 @@ class Contact extends React.Component {
     if (e.target.email.value.match(mailregex)) {
       this.setState({loading: true})
       const data = {
-        contact: `
+        'g-recaptcha-response': this.state.recaptcha,
+        email: e.target.email.value,
+        name: e.target.name.value,
+        fields: `
         Name: ${e.target.name.value || 'n/a'}
         Company: ${e.target.company.value || 'n/a'}
         Phone: ${e.target.phone.value || 'n/a'}
@@ -31,21 +42,12 @@ class Contact extends React.Component {
         _subject: '🚀 dlbn.co contact',
 
       }
-      if (e.target.email.value !== '') {
-        data.email = e.target.email.value
-      }
-      if (e.target._gotcha.value !== '') {
-        data._gotcha = e.target._gotcha.value
-      }
       axios({
         method: 'post',
-        url: 'https://formspree.io/mateus@dalbinaco.com',
-        headers: {
-          'Accept': 'application/json'
-        },
+        url: '/mail',
         data
       }).then((response) => {
-        if (response.data.success && response.data.success === 'email sent') {
+        if (response.data.success) {
           this.setState({
             sent: true
           })
@@ -127,8 +129,13 @@ class Contact extends React.Component {
                   <textarea rows="10" className="form-control" name="description" placeholder={messages.form.description.helper} required />
                 </div>
               </div>
+              <div className="col-12">
+                <div className="form-group">
+                  <ReCAPTCHA onChange={this.handleCaptcha} sitekey="6LeDZj4UAAAAAPvilGJTODOn8woGOH1DVpBI3GK2"/>
+                </div>
+              </div>
               <div className="col">
-                <button type="submit" disabled={this.state.loading} className="btn btn-primary">
+                <button type="submit" disabled={this.state.loading || !this.state.recaptcha} className="btn btn-primary">
                   {!this.state.loading ? messages.form.submit.label : messages.form.submit.loading}
                 </button>
               </div>
