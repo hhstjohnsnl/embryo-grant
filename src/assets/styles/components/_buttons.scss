@@ -14,3 +14,9 @@
   border-color: map-get($colors, green);
   transition: 0.2s;
 }
+
+.btn:disabled, .btn:disabled:hover {
+  cursor: not-allowed;
+  background-color: map-get($colors, lightGrey);
+  border-color: map-get($colors, lightGrey);
+}
