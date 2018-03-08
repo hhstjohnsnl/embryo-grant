@@ -9,6 +9,13 @@ import 'react-typist/dist/Typist.css'
 class IndexPage extends React.Component {
   constructor() {
     super()
+  }
+  trackCta() {
+    if (typeof window !== 'undefined' && window.ga) {
+      window.ga('send', 'event', 'Contact', 'Click CTA to go to contact page')
+    }
+  }
+  componentDidMount() {
     if (typeof window !== `undefined`) {
       if (window.location.pathname === '/') {
         if (navigator.language === 'pt-BR' || navigator.language === 'pt') {
@@ -17,11 +24,6 @@ class IndexPage extends React.Component {
           window.___history.replace('/en/')
         }
       }
-    }
-  }
-  trackCta() {
-    if (typeof window !== 'undefined' && window.ga) {
-      window.ga('send', 'event', 'Contact', 'Click CTA to go to contact page')
     }
   }
   render() {
