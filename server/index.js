@@ -23,7 +23,7 @@ app.post('/mail', recaptcha.middleware.verify, mailgun)
 
 // server
 
-app.use(express.static(path.resolve('public')));
+app.use(express.static(path.resolve('public'), {maxAge: '1d'}));
 
 const PORT = process.env.PORT || 3000;
 
