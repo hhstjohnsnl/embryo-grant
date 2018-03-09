@@ -1,2 +1,2 @@
-# dalbinaco.com
-Personal website at [dalbinaco.com](http://dlbn.co)
+# dlbn.co
+Personal website at [dlbn.co](http://dlbn.co)
