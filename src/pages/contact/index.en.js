@@ -2,44 +2,46 @@ import React from 'react'
 import Contact from '../contact'
 
 const messages = {
-  title: 'Contact',
-  form: {
+  title: 'Apply',
+  form: {    
     name: {
-      label: 'Name'
+      label: 'Name of primary applicant'
+    },
+    email: {
+      label: 'Email of primary applicant'
     },
     company: {
       label: 'Company'
     },
-    email: {
-      label: 'Email'
-    },
-    phone: {
-      label: 'Telephone'
+    companyUrl: {
+      label: 'Company url',
+      helper: 'optional'
     },
     type: {
-      label: 'Project type',
+      label: 'Have you incorporated',
+      helper: 'Incorporation is optional',
       options: [
-        'Select a service',
-        'Website',
-        'Webapp',
-        'E-commerce',
-        'Email template',
+        'Yes, in Newfoundland and Labrador',
+        'Yes, in another Canadian province',
+        'Yes, federally in Canada',
+        'Yes, in another country',
+        'No',
         'Other'
-      ]
-    },
-    budget: {
-      label: 'Budget',
-      options: [
-        'Select your budget range',
-        'up to $300',
-        '$300 to $1000',
-        '$1000 to $2000',
-        '$2000+'
       ]
     },
     description: {
       label: 'Description',
       helper: 'Describe your project and goals'
+    },
+    budget: {
+      label: 'Have you received fundning?',
+      options: [
+        'Yes, from the government',
+        'Yes, from private sources',
+        'Yes, from government and private sources',
+        'No',
+        'Other'
+      ]
     },
     submit: {
       label: 'Submit',

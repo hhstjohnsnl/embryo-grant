@@ -1,25 +1,13 @@
 module.exports = {
   en: {
     meta: {
-      title: 'dlbn.co — Front-end web development',
-      description: 'Front-end developer. I build websites, webapps and beautiful UIs using the latest technology available.'
+      title: 'embryo grant — Health Innovation Initiative',
+      description: 'Got an idea that solves health related issues? Get the ball rolling with up to $45,000 in funding.'
     },
     nav: {
-      projects: 'Projects',
       about: 'About',
-      contact: 'Contact'
+      contact: 'Apply'
 
-    }
-  },
-  pt: {
-    meta: {
-      title: 'dlbn.co — Desenvolvimento front-end',
-      description: 'Eu crio websites, webapps e belas interfaces usando as tecnologias mais recentes.'
-    },
-    nav: {
-      about: 'Sobre',
-      projects: 'Projetos',
-      contact: 'Contato'
     }
   }
 }
