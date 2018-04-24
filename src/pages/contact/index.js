@@ -131,7 +131,7 @@ class Contact extends React.Component {
               </div>              
               <div className="col-12">
                 <div className="form-group">
-                  <ReCAPTCHA onChange={this.handleCaptcha} sitekey="6LeDZj4UAAAAAPvilGJTODOn8woGOH1DVpBI3GK2"/>
+              <ReCAPTCHA onChange={this.handleCaptcha} sitekey="6Lc-K1UUAAAAAH4xfZlcUI2UeMNT8TI7xvFodU5y"/>
                 </div>
               </div>
               <div className="col">
