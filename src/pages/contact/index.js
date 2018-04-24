@@ -3,6 +3,40 @@ import axios from 'axios'
 import Helmet from 'react-helmet'
 import ReCAPTCHA from 'react-google-recaptcha'
 
+const Field = ({ field }) => {
+  const {
+    id,
+    className="col-12 col-md-6",
+    label,
+    options,
+    required=false,
+    type='text',
+    rows,
+    helper=''
+  } = field
+  console.log(field)
+  return (
+    <div className={className}>
+      <div className="form-group">
+        <label htmlFor={id}>{label}</label>
+        {type === 'options' &&
+          <select className="form-control" name={id} id={id} required={required} >
+            {options.map((option, index) => (
+              <option key={`${option}-${index}`} value={index === 0 ? '' : option}>{option}</option>
+            ))}
+          </select>
+        }
+    {(type === 'text' || type === 'email') &&
+          <input type={type} className="form-control" id={id} name={id} required={required} />
+        }
+        {type === 'textarea' &&
+         <textarea rows={rows} className="form-control" name={id} placeholder={helper} required={required} />
+        }
+      </div>
+    </div>
+  )
+}
+
 class Contact extends React.Component {
   constructor() {
     super()
@@ -14,6 +48,11 @@ class Contact extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this)
     this.handleCaptcha = this.handleCaptcha.bind(this)
   }
+
+  createFields = fields => {
+    return fields.map(field => <Field field={field} key={field.id} />)
+  }
+  
   handleCaptcha(value) {
     this.setState({
       recaptcha: value
@@ -65,8 +104,10 @@ class Contact extends React.Component {
     }
   }
   render() {
-    const messages = this.props.messages
-    if (messages) {
+    const { messages, fields } = this.props
+    const fieldArray = this.createFields(fields)
+    console.log(fieldArray)
+    if (messages && fields) {
       return (
         <div>
           <Helmet>
@@ -79,56 +120,7 @@ class Contact extends React.Component {
           ) : (
             <form onSubmit={this.handleSubmit} className="row" style={{maxWidth: 800}}>
               <input type="text" name="_gotcha" style={{display:'none'}} />
-              <div className="col-12 col-md-6">
-                <div className="form-group">
-                  <label htmlFor="name">{messages.form.name.label}*</label>
-                  <input type="text" className="form-control" id="name" name="name" required />
-                </div>
-              </div>
-              <div className="col-12 col-md-6">
-                <div className="form-group">
-                  <label htmlFor="email">{messages.form.email.label}*</label>
-                  <input type="email" className="form-control" id="email" name="email" required />
-                </div>
-              </div>
-              <div className="col-12 col-md-6">
-                <div className="form-group">
-                  <label htmlFor="company">{messages.form.company.label}*</label>
-                  <input type="text" className="form-control" id="company" name="company" required />
-                </div>
-              </div>
-              <div className="col-12 col-md-6">
-                <div className="form-group">
-                  <label htmlFor="companyUrl">{messages.form.companyUrl.label}</label>
-                  <input type="text" className="form-control" id="companyUrl" name="companyUrl" placeholder={messages.form.companyUrl.helper} />
-                </div>
-              </div>
-              <div className="col-12">
-                <div className="form-group">
-                  <label htmlFor="description">{messages.form.description.label}*</label>
-                  <textarea rows="10" className="form-control" name="description" placeholder={messages.form.description.helper} required />
-                </div>
-              </div>
-              <div className="col-12 col-md-6">
-                <div className="form-group">
-                  <label htmlFor="budget">{messages.form.budget.label}*</label>
-                  <select className="form-control" name="budget" id="budget" required>
-                    {messages.form.budget.options.map((option, index) => (
-                      <option key={`${option}-${index}`} value={index === 0 ? '' : option}>{option}</option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-              <div className="col-12 col-md-6">
-                <div className="form-group">
-                  <label htmlFor="type">{messages.form.type.label}*</label>
-                  <select className="form-control" name="type" id="type" required>
-                    {messages.form.type.options.map((option, index) => (
-                      <option key={`${option}-${index}`} value={index === 0 ? '' : option}>{option}</option>
-                    ))}
-                  </select>
-                </div>
-              </div>              
+              {this.createFields(fields)}              
               <div className="col-12">
                 <div className="form-group">
               <ReCAPTCHA onChange={this.handleCaptcha} sitekey="6Lc-K1UUAAAAAH4xfZlcUI2UeMNT8TI7xvFodU5y"/>
