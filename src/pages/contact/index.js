@@ -14,7 +14,6 @@ const Field = ({ field }) => {
     rows,
     helper=''
   } = field
-  console.log(field)
   return (
     <div className={className}>
       <div className="form-group">
@@ -49,7 +48,7 @@ class Contact extends React.Component {
     this.handleCaptcha = this.handleCaptcha.bind(this)
   }
 
-  createFields = fields => {
+  createFields = (fields=[]) => {
     return fields.map(field => <Field field={field} key={field.id} />)
   }
   
@@ -106,7 +105,7 @@ class Contact extends React.Component {
   render() {
     const { messages, fields } = this.props
     const fieldArray = this.createFields(fields)
-    console.log(fieldArray)
+
     if (messages && fields) {
       return (
         <div>
