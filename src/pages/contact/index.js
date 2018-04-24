@@ -81,14 +81,8 @@ class Contact extends React.Component {
               <input type="text" name="_gotcha" style={{display:'none'}} />
               <div className="col-12 col-md-6">
                 <div className="form-group">
-                  <label htmlFor="name">{messages.form.name.label}</label>
-                  <input type="text" className="form-control" id="name" name="name" />
-                </div>
-              </div>
-              <div className="col-12 col-md-6">
-                <div className="form-group">
-                  <label htmlFor="company">{messages.form.company.label}</label>
-                  <input type="text" className="form-control" id="company" name="company" />
+                  <label htmlFor="name">{messages.form.name.label}*</label>
+                  <input type="text" className="form-control" id="name" name="name" required />
                 </div>
               </div>
               <div className="col-12 col-md-6">
@@ -99,8 +93,20 @@ class Contact extends React.Component {
               </div>
               <div className="col-12 col-md-6">
                 <div className="form-group">
-                  <label htmlFor="phone">{messages.form.phone.label}</label>
-                  <input type="phone" className="form-control" id="phone" name="phone" />
+                  <label htmlFor="company">{messages.form.company.label}*</label>
+                  <input type="text" className="form-control" id="company" name="company" required />
+                </div>
+              </div>
+              <div className="col-12 col-md-6">
+                <div className="form-group">
+                  <label htmlFor="company">{messages.form.companyUrl.label}</label>
+                  <input type="text" className="form-control" id="companyUrl" name="companyUrl" placeholder={messages.form.companyUrl.helper} />
+                </div>
+              </div>
+              <div className="col-12">
+                <div className="form-group">
+                  <label htmlFor="description">{messages.form.description.label}*</label>
+                  <textarea rows="10" className="form-control" name="description" placeholder={messages.form.description.helper} required />
                 </div>
               </div>
               <div className="col-12 col-md-6">
@@ -122,13 +128,7 @@ class Contact extends React.Component {
                     ))}
                   </select>
                 </div>
-              </div>
-              <div className="col-12">
-                <div className="form-group">
-                  <label htmlFor="description">{messages.form.description.label}*</label>
-                  <textarea rows="10" className="form-control" name="description" placeholder={messages.form.description.helper} required />
-                </div>
-              </div>
+              </div>              
               <div className="col-12">
                 <div className="form-group">
                   <ReCAPTCHA onChange={this.handleCaptcha} sitekey="6LeDZj4UAAAAAPvilGJTODOn8woGOH1DVpBI3GK2"/>
