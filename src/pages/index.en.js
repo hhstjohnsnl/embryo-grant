@@ -5,7 +5,7 @@ const messages = {
   tagline: {
     title: 'I have an idea to',
     services: [
-      'improve health inefficiences', 
+      'improve health efficiences', 
       'build med tech enterprise',
       'innovate health technology in Newfoundland and beyond'
     ],
@@ -13,19 +13,19 @@ const messages = {
   },
   services: [
     {
-      emoji: '📱',
-      title: 'Responsive layouts',
-      description: (<p>Looks great on <strong>any screen</strong></p>)
+      emoji: '💡',
+      title: 'What we want',
+      description: (<p><strong>Early</strong> stage ideas, with relevance to the local health system</p>)
+    },
+    {
+      emoji: '💸',
+      title: 'What we offer',
+      description: (<p>Grants worth up to <strong>$45,000</strong>, and <strong>mentorship</strong></p>)
     },
     {
       emoji: '🚀',
-      title: 'High performance',
-      description: (<p>90+ score guarantee on PageSpeed for <strong>better speed and Google rank</strong></p>)
-    },
-    {
-      emoji: '🔌',
-      title: 'Integrations',
-      description: (<p><strong>Any API Integrations</strong> you need</p>)
+      title: 'Apply',
+      description: (<p><strong>Submit</strong> your application by 13 May, 2018</p>)
     }
   ],
 }
