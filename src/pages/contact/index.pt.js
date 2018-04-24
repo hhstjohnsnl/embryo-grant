@@ -2,52 +2,54 @@ import React from 'react'
 import Contact from '../contact'
 
 const messages = {
-  title: 'Contato',
-  form: {
+  title: 'Apply',
+  form: {    
     name: {
-      label: 'Nome'
-    },
-    company: {
-      label: 'Empresa'
+      label: 'Name of primary applicant'
     },
     email: {
-      label: 'Email'
+      label: 'Email of primary applicant'
     },
-    phone: {
-      label: 'Telefone'
+    company: {
+      label: 'Company'
+    },
+    companyUrl: {
+      label: 'Company url',
+      helper: 'optional'
     },
     type: {
-      label: 'Tipo de projeto',
+      label: 'Have you incorporated',
+      helper: 'Incorporation is optional',
       options: [
-        'Selecione um serviço',
-        'Website',
-        'Webapp',
-        'Loja virtual',
-        'Template para email',
-        'Outro'
-      ]
-    },
-    budget: {
-      label: 'Investimento',
-      options: [
-        'Selecione o orçamento disponível',
-        'até R$1000',
-        'R$1000 a R$2500',
-        'R$2500 to R$5000',
-        'R$5000+'
+        'Yes, in Newfoundland and Labrador',
+        'Yes, in another Canadian province',
+        'Yes, federally in Canada',
+        'Yes, in another country',
+        'No',
+        'Other'
       ]
     },
     description: {
-      label: 'Descrição',
-      helper: 'Descreva o projeto e seus objetivos'
+      label: 'Description',
+      helper: 'Describe your project and goals'
+    },
+    budget: {
+      label: 'Have you received fundning?',
+      options: [
+        'Yes, from the government',
+        'Yes, from private sources',
+        'Yes, from government and private sources',
+        'No',
+        'Other'
+      ]
     },
     submit: {
-      label: 'Enviar',
-      loading: 'Enviando...',
-      sent: 'Mensagem enviada! Aguarde nosso retorno.'
+      label: 'Submit',
+      loading: 'Sending...',
+      sent: 'Message sent! We will return to you soon.'
     },
     errors: {
-      invalidMail: 'Por favor, use um email válido'
+      invalidMail: 'Please use a valid email address'
     }
   }
 }

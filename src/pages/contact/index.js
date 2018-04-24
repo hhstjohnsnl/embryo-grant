@@ -99,7 +99,7 @@ class Contact extends React.Component {
               </div>
               <div className="col-12 col-md-6">
                 <div className="form-group">
-                  <label htmlFor="company">{messages.form.companyUrl.label}</label>
+                  <label htmlFor="companyUrl">{messages.form.companyUrl.label}</label>
                   <input type="text" className="form-control" id="companyUrl" name="companyUrl" placeholder={messages.form.companyUrl.helper} />
                 </div>
               </div>
