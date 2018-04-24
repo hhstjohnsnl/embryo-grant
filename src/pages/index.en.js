@@ -3,11 +3,13 @@ import IndexPage from './index'
 
 const messages = {
   tagline: {
-    title: 'I build',
+    title: 'I have an idea to',
     services: [
-      'websites', 'web apps', 'beautiful UIs'
+      'improve health inefficiences', 
+      'build med tech enterprise',
+      'innovate health technology in Newfoundland and beyond'
     ],
-    button: `Let's talk!`
+    button: `Apply now`
   },
   services: [
     {
