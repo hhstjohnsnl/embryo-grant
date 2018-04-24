@@ -15,7 +15,7 @@ const messages = {
     {
       emoji: '💡',
       title: 'What we want',
-      description: (<p><strong>Early</strong> stage ideas, with relevance to the local health system</p>)
+      description: (<p><strong>Early</strong> stage ideas, with relevance to the <strong>local health system</strong></p>)
     },
     {
       emoji: '💸',
@@ -25,7 +25,7 @@ const messages = {
     {
       emoji: '🚀',
       title: 'Apply',
-      description: (<p><strong>Submit</strong> your application by 13 May, 2018</p>)
+      description: (<p><strong>Submit</strong> your application by <strong>13 May, 2018</strong></p>)
     }
   ],
 }
