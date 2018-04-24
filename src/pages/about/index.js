@@ -15,6 +15,8 @@ const About = (props) => {
         <section className="mb-3">
           {messages.description}
         </section>
+        {false &&
+        <div>
         <h2>{messages.tech}</h2>
         <Badges skills={[
           {
@@ -71,7 +73,9 @@ const About = (props) => {
             url: 'https://graphql.org/',
             color: '#61DAFB'
           },
-        ]} />
+                  ]} />
+          </div>
+        }
       </div>
     )
   } return (<div />)
