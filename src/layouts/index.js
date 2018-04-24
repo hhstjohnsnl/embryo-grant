@@ -113,7 +113,7 @@ const TemplateWrapper = ({ children }) => {
                 </a>
               </li>
             </ul>
-            <p className="mb-0">stjohnsnl@hackinghelath.ca</p>
+            <p className="mb-0">stjohnsnl@hackinghealth.ca</p>
           </div>
         </footer>
       </div>
