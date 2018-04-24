@@ -8,7 +8,7 @@ module.exports = {
     nav: {
       requirements: 'Requirements',
       prizes: 'Prizes',
-      contact: 'Apply',
+      apply: 'Apply',
     },
   },
 }

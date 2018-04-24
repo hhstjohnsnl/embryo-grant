@@ -14,6 +14,7 @@ const messages = {
   services: [
     {
       emoji: '💡',
+      name: 'requirements',
       title: 'What we want',
       description: (
         <p>
@@ -24,6 +25,7 @@ const messages = {
     },
     {
       emoji: '💸',
+      name: 'prizes',
       title: 'What we offer',
       description: (
         <p>
@@ -34,6 +36,7 @@ const messages = {
     },
     {
       emoji: '🚀',
+      name: 'apply',
       title: 'Apply',
       description: (
         <p>

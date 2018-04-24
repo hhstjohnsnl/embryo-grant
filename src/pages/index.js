@@ -1,5 +1,5 @@
-import React from 'react'
 import Link from 'gatsby-link'
+import React from 'react'
 import Typist from 'react-typist'
 import { withPrefix } from 'gatsby-link'
 import SimpleIcon from '../components/SimpleIcon'
@@ -49,7 +49,7 @@ class IndexPage extends React.Component {
               </h1>
             </div>
             <Link
-              to={`/${this.props.locale}/contact`}
+              to={`/${this.props.locale}/apply`}
               className="btn btn-primary mt-3"
               style={{ fontSize: '1.1rem' }}
               onClick={this.trackCta}
@@ -64,7 +64,7 @@ class IndexPage extends React.Component {
                 <div className="col-12 col-md-4" key={index}>
                   <h3>{service.emoji}</h3>
                   <h3>
-                    <Link to={`/${this.props.locale}/requirements`}>
+                    <Link to={`/${this.props.locale}/${service.name}`}>
                       {service.title}
                     </Link>
                   </h3>

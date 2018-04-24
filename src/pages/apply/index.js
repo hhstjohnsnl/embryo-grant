@@ -59,7 +59,7 @@ const Field = ({ field }) => {
   )
 }
 
-class Contact extends React.Component {
+class Apply extends React.Component {
   constructor() {
     super()
     this.state = {
@@ -179,4 +179,4 @@ class Contact extends React.Component {
   }
 }
 
-export default Contact
+export default Apply

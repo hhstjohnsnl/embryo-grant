@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from '../contact'
+import Apply from '../apply'
 
 const messages = {
   title: 'Apply',
@@ -197,4 +197,4 @@ const fields = [
   },
 ]
 
-export default props => <Contact messages={messages} fields={fields} />
+export default props => <Apply messages={messages} fields={fields} />

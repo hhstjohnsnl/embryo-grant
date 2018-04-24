@@ -87,8 +87,8 @@ const TemplateWrapper = ({ children }) => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={`/${locale}/contact`}>
-                      {messages[locale || defaultLocale].nav.contact}
+                    <Link to={`/${locale}/apply`}>
+                      {messages[locale || defaultLocale].nav.apply}
                     </Link>
                   </li>
                 </ul>
