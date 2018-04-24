@@ -9,7 +9,7 @@ const Field = ({ field }) => {
     className="col-12 col-md-6",
     label,
     options,
-    required=false,
+    required=true,
     type='text',
     rows,
     helper=''
@@ -27,7 +27,7 @@ const Field = ({ field }) => {
           </select>
         }
     {(type === 'text' || type === 'email') &&
-          <input type={type} className="form-control" id={id} name={id} required={required} />
+     <input type={type} className="form-control" id={id} name={id} placeholder={helper} required={required} />
         }
         {type === 'textarea' &&
          <textarea rows={rows} className="form-control" name={id} placeholder={helper} required={required} />

@@ -17,7 +17,8 @@ const messages = {
     },
     companyUrl: {
       label: 'Company url',
-      helper: 'optional'
+      helper: 'optional',
+      required: false
     },
     type: {
       label: 'Have you incorporated',
