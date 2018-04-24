@@ -5,7 +5,8 @@ module.exports = {
       description: 'Got an idea that solves health related issues? Get the ball rolling with up to $45,000 in funding.'
     },
     nav: {
-      about: 'About',
+      requirements: 'Requirements',
+      prizes: 'Prizes',
       contact: 'Apply'
 
     }

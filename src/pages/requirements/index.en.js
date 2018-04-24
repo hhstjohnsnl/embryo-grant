@@ -1,8 +1,8 @@
 import React from 'react'
-import About from '../about'
+import Requirements from '../requirements'
 
 const messages = {
-  title: 'About',
+  title: 'Requirements',
   description: (
     <div>
       <p className="lead">Pre-seed funding</p>
@@ -13,4 +13,4 @@ const messages = {
   tech: 'Technologies'
 }
 
-export default (props) => <About messages={messages} />
+export default (props) => <Requirements messages={messages} />

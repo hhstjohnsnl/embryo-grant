@@ -2,7 +2,7 @@ import React from 'react'
 import Badges from '../../components/Badges'
 import Helmet from 'react-helmet'
 
-const About = (props) => {
+const Requirements = (props) => {
   const messages = props.messages
   if (messages) {
     return (
@@ -81,4 +81,4 @@ const About = (props) => {
   } return (<div />)
 }
 
-export default About
+export default Requirements

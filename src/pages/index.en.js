@@ -15,12 +15,12 @@ const messages = {
     {
       emoji: '💡',
       title: 'What we want',
-      description: (<p><strong>Early</strong> stage ideas, with relevance to the <strong>local health system</strong></p>)
+      description: (<p><strong>Early</strong> stage ideas with relevance to the <strong>local health system</strong></p>)
     },
     {
       emoji: '💸',
       title: 'What we offer',
-      description: (<p>Grants worth up to <strong>$45,000</strong>, and <strong>mentorship</strong></p>)
+      description: (<p>Grants worth up to <strong>$45,000</strong> and <strong>mentorship</strong></p>)
     },
     {
       emoji: '🚀',

@@ -59,7 +59,7 @@ class IndexPage extends React.Component {
               {messages.services.map((service, index) => (
                 <div className="col-12 col-md-4" key={index}>
                   <h3>{service.emoji}</h3>
-                  <h3>{service.title}</h3>
+                  <h3><Link to={`/${this.props.locale}/requirements`}>{service.title}</Link></h3>
                   {service.description}
                 </div>
               ))}

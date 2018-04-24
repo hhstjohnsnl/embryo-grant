@@ -47,8 +47,9 @@ const TemplateWrapper = ({ children }) => {
                 <Link to={`/${locale}/`}><h3 className="mb-0" style={{color: 'white'}}>embryo grant</h3><small className="text-muted">{'Health Innovation Initiative'}</small></Link>
                 <nav style={{flex: 1}}>
                   <ul className="d-flex justify-content-end list-unstyled m-0 p-0">
-                    <li><Link to={`/${locale}/contact`}>{messages[locale || defaultLocale].nav.contact}</Link></li>
-                    <li><Link to={`/${locale}/about`}>{messages[locale || defaultLocale].nav.about}</Link></li>
+                    <li><Link to={`/${locale}/requirements`}>{messages[locale || defaultLocale].nav.requirements}</Link></li>
+                    <li><Link to={`/${locale}/prizes`}>{messages[locale || defaultLocale].nav.prizes}</Link></li>
+                    <li><Link to={`/${locale}/contact`}>{messages[locale || defaultLocale].nav.contact}</Link></li>                    
                   </ul>
                 </nav>
               </div>
