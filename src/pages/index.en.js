@@ -3,27 +3,29 @@ import IndexPage from './index'
 
 const messages = {
   tagline: {
-    title: 'I build',
+    title: 'I have an idea to',
     services: [
-      'websites', 'web apps', 'beautiful UIs'
+      'improve health efficiences', 
+      'build med tech enterprise',
+      'innovate health technology in Newfoundland and beyond'
     ],
-    button: `Let's talk!`
+    button: `Apply now`
   },
   services: [
     {
-      emoji: '📱',
-      title: 'Responsive layouts',
-      description: (<p>Looks great on <strong>any screen</strong></p>)
+      emoji: '💡',
+      title: 'What we want',
+      description: (<p><strong>Early</strong> stage ideas, with relevance to the <strong>local health system</strong></p>)
+    },
+    {
+      emoji: '💸',
+      title: 'What we offer',
+      description: (<p>Grants worth up to <strong>$45,000</strong>, and <strong>mentorship</strong></p>)
     },
     {
       emoji: '🚀',
-      title: 'High performance',
-      description: (<p>90+ score guarantee on PageSpeed for <strong>better speed and Google rank</strong></p>)
-    },
-    {
-      emoji: '🔌',
-      title: 'Integrations',
-      description: (<p><strong>Any API Integrations</strong> you need</p>)
+      title: 'Apply',
+      description: (<p><strong>Submit</strong> your application by <strong>13 May, 2018</strong></p>)
     }
   ],
 }

@@ -5,9 +5,9 @@ const messages = {
   title: 'About',
   description: (
     <div>
-      <p className="lead">Front-end developer. Co-founder of <a href="http://tripby.org">tripby.org</a></p>
-      <p>I love technology and how it drives human evolution. I'm excited to be part of this.</p>
-      <p>I'm currently living as a nomad, backpacking through South America.</p>
+      <p className="lead">Pre-seed funding</p>
+      <p>The Embryo Grant helps anyone interested in developing a health-related innovation, that has the potential to translate into a sustainable enterprise (e.g. products or services that address issues related to inefficiencies in the healthcare industry, increase the quality of care of patients, etc.).</p>
+      <p>The Embryo Grant is a seed/early stage fu​​nd, under the Health Innovation Initiative, which is a project to build a thriving medical technology entrepreneurial ecosystem within the province of Newfoundland and Labrador. The Health Innovation Initiative is co-led by Newfoundland Association of Technology Industries (NATI), Memorial Centre for entrepreneurship(MCE), Memorial University and Eastern Health, and is funded by the Atlantic Canada Opportunities Agency (ACOA)</p>
     </div>
   ),
   tech: 'Technologies'
