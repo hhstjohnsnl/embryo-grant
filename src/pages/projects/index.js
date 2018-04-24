@@ -2,7 +2,7 @@ import React from 'react'
 import Project from '../../components/Project'
 import Helmet from 'react-helmet'
 
-const Projects = (props) => {
+const Projects = props => {
   const messages = props.messages
   const projects = props.projects
   if (messages && projects) {
@@ -12,7 +12,7 @@ const Projects = (props) => {
           <title>{messages.title}</title>
         </Helmet>
         <h1>{messages.title}</h1>
-        <div className="separator"></div>
+        <div className="separator" />
         <section>
           <div className="row">
             {projects.map((project, index) => (
@@ -26,6 +26,7 @@ const Projects = (props) => {
         </section>
       </div>
     )
-  } return (<div/>)
+  }
+  return <div />
 }
 export default Projects

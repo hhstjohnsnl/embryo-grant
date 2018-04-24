@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Typist from 'react-typist';
-import { withPrefix } from 'gatsby-link';
+import Typist from 'react-typist'
+import { withPrefix } from 'gatsby-link'
 import SimpleIcon from '../components/SimpleIcon'
 
 import 'react-typist/dist/Typist.css'
@@ -40,7 +40,9 @@ class IndexPage extends React.Component {
                   {messages.tagline.services.map((service, index) => (
                     <div className="d-inline" key={index}>
                       <strong>{service}</strong>
-                      {index === (messages.tagline.services.length - 1) ? null : <Typist.Backspace count={service.length} delay={1000}/>}
+                      {index === messages.tagline.services.length - 1 ? null : (
+                        <Typist.Backspace count={service.length} delay={1000} />
+                      )}
                     </div>
                   ))}
                 </Typist>
@@ -49,17 +51,23 @@ class IndexPage extends React.Component {
             <Link
               to={`/${this.props.locale}/contact`}
               className="btn btn-primary mt-3"
-              style={{fontSize: '1.1rem'}}
+              style={{ fontSize: '1.1rem' }}
               onClick={this.trackCta}
-              >{messages.tagline.button}</Link>
+            >
+              {messages.tagline.button}
+            </Link>
           </section>
-          <div className="separator"></div>
+          <div className="separator" />
           <section>
-            <div className="row" style={{lineHeight: 2}}>
+            <div className="row" style={{ lineHeight: 2 }}>
               {messages.services.map((service, index) => (
                 <div className="col-12 col-md-4" key={index}>
                   <h3>{service.emoji}</h3>
-                  <h3><Link to={`/${this.props.locale}/requirements`}>{service.title}</Link></h3>
+                  <h3>
+                    <Link to={`/${this.props.locale}/requirements`}>
+                      {service.title}
+                    </Link>
+                  </h3>
                   {service.description}
                 </div>
               ))}
@@ -68,7 +76,7 @@ class IndexPage extends React.Component {
         </div>
       )
     }
-    return (<div/>)
+    return <div />
   }
 }
 export default IndexPage

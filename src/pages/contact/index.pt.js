@@ -3,21 +3,21 @@ import Contact from '../contact'
 
 const messages = {
   title: 'Apply',
-  form: {    
+  form: {
     name: {
       label: 'Name of primary applicant*',
-      type: 'text'
+      type: 'text',
     },
     email: {
       label: 'Email of primary applicant',
-      type: 'email'
+      type: 'email',
     },
     company: {
-      label: 'Company'
+      label: 'Company',
     },
     companyUrl: {
       label: 'Company url',
-      helper: 'optional'
+      helper: 'optional',
     },
     type: {
       label: 'Have you incorporated',
@@ -28,12 +28,12 @@ const messages = {
         'Yes, federally in Canada',
         'Yes, in another country',
         'No',
-        'Other'
-      ]
+        'Other',
+      ],
     },
     description: {
       label: 'Description',
-      helper: 'Describe your project and goals'
+      helper: 'Describe your project and goals',
     },
     budget: {
       label: 'Have you received fundning?',
@@ -42,119 +42,122 @@ const messages = {
         'Yes, from private sources',
         'Yes, from government and private sources',
         'No',
-        'Other'
-      ]
+        'Other',
+      ],
     },
     submit: {
       label: 'Submit',
       loading: 'Sending...',
-      sent: 'Message sent! We will return to you soon.'
+      sent: 'Message sent! We will return to you soon.',
     },
     errors: {
-      invalidMail: 'Please use a valid email address'
-    }
-  }
+      invalidMail: 'Please use a valid email address',
+    },
+  },
 }
 
 const fields = [
   {
     id: 'name',
     label: 'Name of primary applicant',
-    type: 'text'
+    type: 'text',
   },
   {
     id: 'email',
     label: 'Email of primary applicant',
-    type: 'email'
+    type: 'email',
   },
   {
     id: 'company',
-    label: 'Company'
+    label: 'Company',
   },
   {
     id: 'companyUrl',
     label: 'Company url',
-    helper: 'optional'
+    helper: 'optional',
   },
   {
     id: 'teamMembers',
     label: 'Team members and expertise',
     helper: 'List your team members and their areas of expertise',
-    className: "col-12",
+    className: 'col-12',
     type: 'textarea',
-    rows: 5
+    rows: 5,
   },
   {
     id: 'problem',
     label: 'Problem',
-    helper: 'What is the problem? Who experiences it? Who cares about it? How often does it happen? ',
-    className: "col-12",
+    helper:
+      'What is the problem? Who experiences it? Who cares about it? How often does it happen? ',
+    className: 'col-12',
     type: 'textarea',
-    rows: 10
+    rows: 10,
   },
   {
     id: 'impact',
     label: 'Impact',
-    helper: 'What would be the impact on your customers if this problem is solved? What will be the impact on Newfoundland and Labrador? Will it scale outside  the province?',
-    className: "col-12",
+    helper:
+      'What would be the impact on your customers if this problem is solved? What will be the impact on Newfoundland and Labrador? Will it scale outside  the province?',
+    className: 'col-12',
     type: 'textarea',
-    rows: 10
+    rows: 10,
   },
   {
     id: 'innovation',
     label: 'Innovation',
     helper: 'What is your health related innovation or solution?',
-    className: "col-12",
+    className: 'col-12',
     type: 'textarea',
-    rows: 10
+    rows: 10,
   },
   {
     id: 'duration',
     label: 'Duration',
     helper: 'How long have you worked on this idea?',
-    className: "col-12",
+    className: 'col-12',
     type: 'textarea',
-    rows: 5
+    rows: 5,
   },
   {
     id: 'ideation',
     label: 'Ideation',
     helper: 'Why did you pick this idea?',
-    className: "col-12",
+    className: 'col-12',
     type: 'textarea',
-    rows: 5
+    rows: 5,
   },
   {
     id: 'competitiveEdge',
     label: 'Competitive edge',
     helper: 'How is your approach different and innovative?',
-    className: "col-12",
+    className: 'col-12',
     type: 'textarea',
-    rows: 10
+    rows: 10,
   },
   {
     id: 'competitors',
     label: 'Competitors',
     helper: 'List your competitors or alternatives',
-    className: "col-12",
+    className: 'col-12',
     type: 'textarea',
-    rows: 10
+    rows: 10,
   },
   {
     id: 'users',
     label: 'Users',
     helper: 'Your plan to attract users',
-    className: "col-12",
+    className: 'col-12',
     type: 'textarea',
-    rows: 10
+    rows: 10,
   },
   {
     id: 'validation',
     label: 'Validation',
-    helper: 'Provide user validation (e.g. revenues, early-customers, interviews, surveys)',
-    className: "col-12",
+    helper:
+      'Provide user validation (e.g. revenues, early-customers, interviews, surveys)',
+    className: 'col-12',
     type: 'textarea',
-    rows: 10
+    rows: 10,
   },
   {
     id: 'funding',
@@ -165,8 +168,8 @@ const fields = [
       'Yes, from private sources',
       'Yes, from government and private sources',
       'No',
-      'Other'
-    ]
+      'Other',
+    ],
   },
   {
     id: 'type',
@@ -179,17 +182,18 @@ const fields = [
       'Yes, federally in Canada',
       'Yes, in another country',
       'No',
-      'Other'
-    ]
+      'Other',
+    ],
   },
   {
     id: 'video',
     label: 'Video pitch url',
-    helper: 'Record a 2 minute video pitch, upload to the internets, and provide the url',
-    className: "col-12",
+    helper:
+      'Record a 2 minute video pitch, upload to the internets, and provide the url',
+    className: 'col-12',
     type: 'textarea',
-    rows: 3
+    rows: 3,
   },
 ]
 
-export default (props) => <Contact messages={messages} fields={fields}/>
+export default props => <Contact messages={messages} fields={fields} />
