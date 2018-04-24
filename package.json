@@ -1,6 +1,6 @@
 {
-  "name": "dlbn.co",
-  "description": "Personal website",
+  "name": "embryo-grant",
+  "description": "Landing page for the Health Innovation Initiative Embryo Grant in Newfoundland and Labradord",
   "version": "0.2.0",
   "author": "Mateus Dal Bianco <mateus@dalbinaco.com>",
   "dependencies": {
