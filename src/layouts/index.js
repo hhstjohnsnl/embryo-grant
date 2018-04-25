@@ -15,6 +15,7 @@ import twitterLogo from '../assets/img/social/twitter.svg'
 import githubLogo from '../assets/img/social/github.svg'
 import instagramLogo from '../assets/img/social/instagram.svg'
 import linkedinLogo from '../assets/img/social/linkedin.svg'
+import slackLogo from '../assets/img/social/slack.svg'
 
 addLocaleData([...en, ...pt])
 
@@ -102,6 +103,11 @@ const TemplateWrapper = ({ children }) => {
         <footer className="pt-5 pb-3">
           <div className="container">
             <ul className="row" style={{ padding: 0, listStyleType: 'none' }}>
+              <li className="col" style={{ flex: 0 }}>
+                <a href="https://slack.hhstjohnsnl.com">
+                  <img src={slackLogo} alt="" height="18" />
+                </a>
+              </li>
               <li className="col" style={{ flex: 0 }}>
                 <a href="https://github.com/hhstjohnsnl">
                   <img src={githubLogo} alt="" height="18" />
