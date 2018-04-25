@@ -5,7 +5,7 @@ const messages = {
   title: 'Requirements',
   description: (
     <div>
-      <p className="lead">Pre-seed funding</p>
+      <p className="lead">Got an idea that solves health related issues? Get the ball rolling with up to $45,000 in funding</p>
       <p>
         The Embryo Grant helps anyone interested in developing a health-related
         innovation, that has the potential to translate into a sustainable
@@ -22,6 +22,7 @@ const messages = {
         entrepreneurship(MCE), Memorial University and Eastern Health, and is
         funded by the Atlantic Canada Opportunities Agency (ACOA)
       </p>
+      <p className="lead">Elgibility crieteria</p>
       <ul>
         <li>Applicants may compete as individuals, but are encouraged to create teams with a variety of different skill sets and strengths.</li>
         <li>Applicants are required to have at least one relevant healthcare team member. The Hacking Health St. John’s chapter will support in finding a relevant healthcare team member if they do not already have one. </li>
