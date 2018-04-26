@@ -5,13 +5,13 @@
 }
 .btn-primary {
   color: rgba(0,0,0,0.75) !important;
-  background-color: map-get($colors, cyan);
-  border-color: map-get($colors, cyan);
+  background-color: map-get($colors, green);
+  border-color: map-get($colors, green);
 }
 .btn-primary:hover {
   color: rgba(0,0,0,0.75) !important;
-  background-color: map-get($colors, green);
-  border-color: map-get($colors, green);
+  background-color: map-get($colors, cyan);
+  border-color: map-get($colors, cyan);
   transition: 0.2s;
 }
 
