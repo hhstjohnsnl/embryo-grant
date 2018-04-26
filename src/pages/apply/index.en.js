@@ -3,6 +3,7 @@ import Apply from '../apply'
 
 const messages = {
   title: 'Apply',
+  button: 'Start an application',
   form: {
     name: {
       label: 'Name of primary applicant*',
