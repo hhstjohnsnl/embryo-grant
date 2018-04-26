@@ -12,11 +12,11 @@ const messages = {
         enterprise.        
       </p>
       <p>
-        The Embryo Grant is a seed fund made available by the Health
-        Innovation Initiative.
-        The Health Innovation Iniitiative aims to build a thriving medical
+        The Embryo Grant is a seed fund made available by the <strong>Health
+        Innovation Initiative</strong>.
+        The <strong>Health Innovation Iniitiative</strong> aims to build a thriving medical
         technology entrepreneurial ecosystem within the province of Newfoundland
-        and Labrador. The Health Innovation Initiative is supported by Newfoundland
+        and Labrador. The <strong>Health Innovation Initiative</strong> is supported by Newfoundland
         Association of Technology Industries, Memorial Centre for
         entrepreneurship, Memorial University of Newfoundland, Eastern Health, and
         the Atlantic Canada Opportunities Agency.
