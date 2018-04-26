@@ -5,7 +5,7 @@ const messages = {
   title: 'Requirements',
   description: (
     <div>
-      <p className="lead">Got an idea that solves health related issues? Get the ball rolling with up to $45,000 in funding</p>
+      <p className="lead">Got an idea that solves a health related problem? Get the ball rolling with up to $45,000 in funding</p>
       <p>
         The Embryo Grant helps anyone interested in developing a health-related
         innovation, that has the potential to translate into a sustainable
