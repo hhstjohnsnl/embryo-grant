@@ -148,7 +148,7 @@ class Apply extends React.Component {
             style={{ fontSize: '1.1rem' }}
             onClick={trackCta}
             >
-            {messages.button}
+            {"Start an application"}
           </a>
         </div>
       )
