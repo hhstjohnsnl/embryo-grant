@@ -11,6 +11,8 @@ import '../assets/styles/main.scss'
 
 import messages from './messages'
 
+import logo from '../assets/img/logos/embryo-grant-logo.svg'
+import logoBanner from '../assets/img/logos/embryo-grant-banner.svg'
 import twitterLogo from '../assets/img/social/twitter.svg'
 import githubLogo from '../assets/img/social/github.svg'
 import instagramLogo from '../assets/img/social/instagram.svg'
@@ -67,9 +69,9 @@ const TemplateWrapper = ({ children }) => {
         <header>
           <div className="container py-4 py-md-5">
             <div className="d-flex align-items-center">
-              <Link to={`/${locale}/`}>
+              <Link to={`/${locale}/`}>                
                 <h3 className="mb-0" style={{ color: 'white' }}>
-                  embryo grant
+                  <img src={logo} alt="embryo grant logo" height="54" style={{ paddingRight: '10px' }}/>embryo grant
                 </h3>
                 <small className="text-muted">
                   {'Health Innovation Initiative'}
