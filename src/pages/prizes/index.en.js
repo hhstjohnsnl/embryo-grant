@@ -7,13 +7,26 @@ const messages = {
     <div>
       <p className="lead">Pre-seed funding</p>
       <ul>
-        <li>Up to three $15,000 prizes of funding are available. The number of recipients will depend on the quality of applicants and is at the discretion of the selection committee.</li>
+        <li>
+          Up to three $15,000 prizes of funding are available. The number of
+          recipients will depend on the quality of applicants and is at the
+          discretion of the selection committee.
+        </li>
       </ul>
       <p className="lead">Co-working space and mentorship</p>
       <ul>
-        <li>Teams are invited to use Bounce Labs (co-working space in the Faculty of Medicine) starting in April 2018.</li>
-        <li>Winning teams with a technology-based business idea will have free registration to the Genesis Centre’s Evolution Program.</li>
-        <li>Winning teams will have access to the MaRS market intelligence reporting ($50k worth of reports).</li>
+        <li>
+          Teams are invited to use Bounce Labs (co-working space in the Faculty
+          of Medicine) starting in April 2018.
+        </li>
+        <li>
+          Winning teams with a technology-based business idea will have free
+          registration to the Genesis Centre’s Evolution Program.
+        </li>
+        <li>
+          Winning teams will have access to the MaRS market intelligence
+          reporting ($50k worth of reports).
+        </li>
       </ul>
     </div>
   ),

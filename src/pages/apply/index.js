@@ -21,7 +21,7 @@ const Field = ({ field }) => {
     rows,
     helper = '',
   } = field
-  
+
   return (
     <div className={className}>
       <div className="form-group">
@@ -147,13 +147,13 @@ class Apply extends React.Component {
             className="btn btn-primary mt-3"
             style={{ fontSize: '1.1rem' }}
             onClick={trackCta}
-            >
-            {"Start an application"}
+          >
+            {'Start an application'}
           </a>
         </div>
       )
     }
-    
+
     if (messages && fields) {
       return (
         <div>

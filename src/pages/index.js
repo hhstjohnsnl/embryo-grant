@@ -40,7 +40,9 @@ class IndexPage extends React.Component {
                   {messages.tagline.services.map((service, index) => (
                     <div className="d-inline" key={index}>
                       <strong>{service}</strong>
-                      {index === messages.tagline.services.length - 1 ? '' : (
+                      {index === messages.tagline.services.length - 1 ? (
+                        ''
+                      ) : (
                         <Typist.Backspace count={service.length} delay={1000} />
                       )}
                     </div>

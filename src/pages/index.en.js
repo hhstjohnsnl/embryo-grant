@@ -40,8 +40,7 @@ const messages = {
       title: 'Apply',
       description: (
         <p>
-          Submit your application by{' '}
-          <strong>13 May, 2018</strong>
+          Submit your application by <strong>13 May, 2018</strong>
         </p>
       ),
     },

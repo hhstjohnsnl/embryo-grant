@@ -69,13 +69,16 @@ const TemplateWrapper = ({ children }) => {
         <header>
           <div className="container py-4 py-md-5">
             <div className="d-flex align-items-center">
-              <Link to={`/${locale}/`}>                
+              <Link to={`/${locale}/`}>
                 <h3 className="mb-0" style={{ color: '#000' }}>
-                  <img src={logo} alt="embryo grant logo" height="54" style={{ paddingRight: '10px' }}/>embryo grant
+                  <img
+                    src={logo}
+                    alt="embryo grant logo"
+                    height="54"
+                    style={{ paddingRight: '10px' }}
+                  />embryo grant
                 </h3>
-                <small className="text-muted">
-                  
-                </small>
+                <small className="text-muted" />
               </Link>
               <nav style={{ flex: 1 }}>
                 <ul className="d-flex justify-content-end list-unstyled m-0 p-0">
