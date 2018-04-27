@@ -28,17 +28,17 @@ const messages = {
       <img src={phase1Figure} alt="Phase one figure" width="600" className="figure" />
       <figcaption>Three teams are selected from the applicants. Each team receives up to $15,000
         in funding to develop their idea over the next two months. At the end of phase one, 
-        each team submits a progress reports and prepares to pitch their product.</figcaption>
+        each team submits a progress report and prepares to pitch their product.</figcaption>
       </figure>
       <figure>
         <p className="lead">
           Phase two
         </p>
       <img src={phase2Figure} alt="Phase two figure" width="600" className="figure" />
-      <figcaption>Two teams are selected from the product pitch and progress ports. These two
+      <figcaption>Two teams are selected from the product pitch and progress reports. These two
         teams each receive up to an additional $15,000 to develop their product
         over the next two months. At the end of phase two, each team submits a progress
-        report and prepairs to demo their product.</figcaption>
+        report and prepares to demo their product.</figcaption>
       </figure>
       <p className="lead">
         Phase three
