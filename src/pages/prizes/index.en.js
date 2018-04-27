@@ -8,8 +8,7 @@ const messages = {
       <p className="lead">Money 💸</p>
       <ul>
         <li>
-          Up to three $15,000 prizes of funding are available for each team
-          (that's up to $45,000 to the overall winner).
+          Successful teams can secure up to three rounds of funding with each round worth $15,000.
         </li>
       </ul>
       <p className="lead">Co-working space 🏢 </p>
