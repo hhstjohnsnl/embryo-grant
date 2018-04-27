@@ -107,17 +107,17 @@ const TemplateWrapper = ({ children }) => {
             <ul className="row" style={{ padding: 0, listStyleType: 'none' }}>
               <li className="col" style={{ flex: 0 }}>
                 <a href="https://slack.hhstjohnsnl.com">
-                  <img src={slackLogo} alt="" height="18" />
+                  <img src={slackLogo} alt="" height="24" />
                 </a>
               </li>
               <li className="col" style={{ flex: 0 }}>
                 <a href="https://github.com/hhstjohnsnl">
-                  <img src={githubLogo} alt="" height="18" />
+                  <img src={githubLogo} alt="" height="24" />
                 </a>
               </li>
               <li className="col" style={{ flex: 0 }}>
                 <a href="https://twitter.com/hhstjohnsnl">
-                  <img src={twitterLogo} alt="" height="18" />
+                  <img src={twitterLogo} alt="" height="24" />
                 </a>
               </li>
             </ul>
