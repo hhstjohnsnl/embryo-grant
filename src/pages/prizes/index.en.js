@@ -8,7 +8,7 @@ const messages = {
       <p className="lead">Pre-seed funding</p>
       <ul>
         <li>
-          Up to three $15,000 prizes of funding are available.
+          Up to three $15,000 prizes of funding are available for each team.
         </li>
       </ul>
       <p className="lead">Co-working space and mentorship</p>
