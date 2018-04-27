@@ -135,7 +135,7 @@ class Apply extends React.Component {
     }
   }
   render() {
-    const { messages, fields } = this.props
+    const { messages={}, fields } = this.props
     const fieldArray = this.createFields(fields)
 
     if (true) {
