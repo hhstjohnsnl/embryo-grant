@@ -70,11 +70,11 @@ const TemplateWrapper = ({ children }) => {
           <div className="container py-4 py-md-5">
             <div className="d-flex align-items-center">
               <Link to={`/${locale}/`}>                
-                <h3 className="mb-0" style={{ color: 'white' }}>
+                <h3 className="mb-0" style={{ color: '#000' }}>
                   <img src={logo} alt="embryo grant logo" height="54" style={{ paddingRight: '10px' }}/>embryo grant
                 </h3>
                 <small className="text-muted">
-                  {'Health Innovation Initiative'}
+                  
                 </small>
               </Link>
               <nav style={{ flex: 1 }}>
