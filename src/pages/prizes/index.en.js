@@ -5,13 +5,13 @@ const messages = {
   title: 'Prizes',
   description: (
     <div>
-      <p className="lead">Pre-seed funding</p>
+      <p className="lead">Pre-seed funding 💸</p>
       <ul>
         <li>
           Up to three $15,000 prizes of funding are available for each team.
         </li>
       </ul>
-      <p className="lead">Co-working space and mentorship</p>
+      <p className="lead">Co-working space 🏢 and mentorship 👩‍🔬⚕👨</p>
       <ul>
         <li>
           Teams are invited to use Bounce Labs (co-working space in the Faculty
