@@ -3,6 +3,14 @@ import Apply from '../apply'
 
 const messages = {
   title: 'Apply',
+  description: (
+    <div>
+      <p className="lead">
+        Got an idea that solves a health related problem? Get the ball rolling
+        with up to $45,000 in funding.
+      </p>
+    </div>
+  ),
   button: 'Start an application',
   form: {
     name: {

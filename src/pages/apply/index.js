@@ -141,6 +141,11 @@ class Apply extends React.Component {
     if (true) {
       return (
         <div>
+          <h1>
+            {messages.title}
+          </h1>
+          <div className="separator" />
+          <section className="mb-3">{messages.description}</section>
           <a
             href={`https://mun.submittable.com/submit/d29643f2-cbcf-41f7-96f3-c381b9bb9708/embryo-grant`}
             target="_blank"
