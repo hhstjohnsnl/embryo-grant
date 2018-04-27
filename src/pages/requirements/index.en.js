@@ -8,7 +8,7 @@ const messages = {
       <p className="lead">Got an idea that solves a health related problem? Get the ball rolling with up to $45,000 in funding</p>
       <p>
         The Embryo Grant supports the development of health-related innovation that
-        deomnstrates potential to grow into a sustainable
+        demonstrates potential to grow into a sustainable
         enterprise.        
       </p>
       <p>
