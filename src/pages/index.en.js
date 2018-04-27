@@ -7,7 +7,7 @@ const messages = {
     services: [
       'improve health efficiences',
       'build med tech enterprise',
-      'innovate health technology in Newfoundland and beyond',
+      'innovate health technology in Newfoundland and beyond.',
     ],
     button: `Apply now`,
   },
