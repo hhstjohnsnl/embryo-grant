@@ -87,13 +87,13 @@ const messages = {
       <p>
         The Embryo Grant is a seed fund made available by the{' '}
         <strong>Health Innovation Initiative</strong>. The{' '}
-        <strong>Health Innovation Iniitiative</strong> aims to build a thriving
+        <strong>Health Innovation Initiative</strong> aims to build a thriving
         medical technology entrepreneurial ecosystem within the province of
         Newfoundland and Labrador. The{' '}
-        <strong>Health Innovation Initiative</strong> is supported by
-        Newfoundland Association of Technology Industries, Memorial Centre for
-        entrepreneurship, Memorial University of Newfoundland, Eastern Health,
-        and the Atlantic Canada Opportunities Agency.
+        <strong>Health Innovation Initiative</strong> is supported by the{' '}
+        <a href="http://www.nati.net/" target="_blank">Newfoundland Association of Technology Industries</a>, <a href="https://mce.mun.ca/" target="_blank">Memorial Centre for
+          Entrepreneurship</a>, <a href="https://www.mun.ca/" target="_blank">Memorial University of Newfoundland</a>, <a href="http://www.easternhealth.ca/" target="_blank">Eastern Health</a>,
+    and the <a href="http://www.acoa-apeca.gc.ca" target="_blank">Atlantic Canada Opportunities Agency</a>.
       </p>
     </div>
   ),
