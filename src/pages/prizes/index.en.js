@@ -5,25 +5,27 @@ const messages = {
   title: 'Prizes',
   description: (
     <div>
-      <p className="lead">Pre-seed funding 💸</p>
+      <p className="lead">Money 💸</p>
       <ul>
         <li>
-          Up to three $15,000 prizes of funding are available for each team.
+          Up to three $15,000 prizes of funding are available for each team
+          (that's up to $45,000 to the overall winner).
         </li>
       </ul>
-      <p className="lead">Co-working space 🏢 and mentorship 👩‍🔬⚕👨</p>
+      <p className="lead">Co-working space 🏢 </p>
       <ul>
         <li>
-          Teams are invited to use Bounce Labs (co-working space in the Faculty
-          of Medicine) starting in April 2018.
+          Access to the Bounce Lab co-working space in the Faculty
+          of Medicine starting in May 2018.
+        </li>
+      </ul>
+      <p className="lead">Mentorship 👩‍🔬⚕👨</p>
+      <ul>
+        <li>
+          Free registration to the Genesis Centre’s <a href="http://www.genesiscentre.ca/evolution-program/" target="_blank">Evolution Program</a>.
         </li>
         <li>
-          Winning teams with a technology-based business idea will have free
-          registration to the Genesis Centre’s Evolution Program.
-        </li>
-        <li>
-          Winning teams will have access to the MaRS market intelligence
-          reporting ($50k worth of reports).
+          Access to the MaRS <a href="https://www.marsdd.com/market-intelligence/" target="_blank">market intelligence</a> reporting ($50k worth of reports).
         </li>
       </ul>
     </div>
