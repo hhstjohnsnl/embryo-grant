@@ -8,9 +8,7 @@ const messages = {
       <p className="lead">Pre-seed funding</p>
       <ul>
         <li>
-          Up to three $15,000 prizes of funding are available. The number of
-          recipients will depend on the quality of applicants and is at the
-          discretion of the selection committee.
+          Up to three $15,000 prizes of funding are available.
         </li>
       </ul>
       <p className="lead">Co-working space and mentorship</p>
