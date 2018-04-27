@@ -16,7 +16,7 @@ const messages = {
       <ul>
         <li>
           Access to the Bounce Lab co-working space in the Faculty
-          of Medicine starting in May 2018.
+          of Medicine starting in June 2018.
         </li>
       </ul>
       <p className="lead">Mentorship 👩‍🔬⚕👨</p>
