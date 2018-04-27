@@ -18,7 +18,7 @@ const messages = {
       title: 'What we want',
       description: (
         <p>
-          <strong>Early</strong> stage ideas with relevance to the{' '}
+          <strong>Early stage ideas</strong> with relevance to the{' '}
           <strong>local health system</strong>
         </p>
       ),
@@ -29,7 +29,7 @@ const messages = {
       title: 'What we offer',
       description: (
         <p>
-          Grants worth up to <strong>$45,000</strong> and{' '}
+          <strong>Grants</strong> worth up to <strong>$45,000</strong> and{' '}
           <strong>mentorship</strong>
         </p>
       ),
@@ -40,7 +40,7 @@ const messages = {
       title: 'Apply',
       description: (
         <p>
-          <strong>Submit</strong> your application by{' '}
+          Submit your application by{' '}
           <strong>13 May, 2018</strong>
         </p>
       ),
