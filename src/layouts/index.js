@@ -103,7 +103,7 @@ const TemplateWrapper = ({ children }) => {
             </div>
           </div>
         </header>
-        <div className="container" style={{ flex: 1 }}>
+        <div className="container" style={{ flexGrow: 1 }}>
           <main>{children()}</main>
         </div>
         <footer className="pt-5 pb-3">
