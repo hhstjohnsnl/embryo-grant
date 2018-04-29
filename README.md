@@ -2,7 +2,7 @@
 Got an idea that solves health related issues? Get the ball rolling with up to $45,000 in funding.
 [embryo-grant.hhstjohnsnl.com](https://embryo-grant.hhstjohnsnl.com)
 
-## Host your own Embryo Grant!
+## Host your own Embryo Grant! 😍
 
 - [Installation](#installation)
 
@@ -26,7 +26,7 @@ git fetch
 git checkout develop
 ```
 
-Install dependencies:
+Install dependencies: ☕️
 
 ``` shell
 yarn install
@@ -40,4 +40,4 @@ yarn develop
 
 Open a browser and navigate to `http://localhost:8000`
 
-All done!
+All done! 🎉
