@@ -50,7 +50,7 @@ const messages = {
         into a sustainable business over the next two months. At the end of
         phase three, the team submits a final progress report.</figcaption>
       </figure>
-      <p className="lead">Elgibility crieteria</p>
+      <p className="lead">Competition Rules</p>
       <ul>
         <li>
           Applicants may compete as individuals, but are encouraged to create
@@ -63,10 +63,10 @@ const messages = {
         </li>
         <li>Individuals may participate in more than one team.</li>
         <li>
-          Successful applicants will have formed a non-for-profit or commercial
-          corporation in the province of Newfoundland and Labrador, prior to
-          receiving their award. The Hacking Health St. John’s chapter will
-          provide guidance if required for the same.{' '}
+          Successful applicants will form a non-for-profit or commercial
+          corporation in the province of Newfoundland and Labrador prior to
+          receiving funding. The Hacking Health St. John’s chapter will
+          provide guidance.{' '}
         </li>
         <li>
           Applicants must have a business idea with an element of innovation
@@ -77,12 +77,15 @@ const messages = {
           Nonprofits may participate in the competition but must demonstrate
           income generation potential beyond traditional philanthropy. All
           entries in the Embryo Grant will be judged on their ability to become
-          financially self-sustaining
+          financially self-sustaining.
         </li>
         <li>
           Eligibility is determined at the discretion of the selection
           committee.
         </li>
+        <li>Successful applicants will receive funding on a reimbursement basis for expenses incurred within the stipulated funding period (for example, an applicant awarded funding of $15,000 in phase I must incur expenses within the Phase I period between June 01 and July 31).</li>
+        <li>Successfull applicants must submit expense claims within 45 days of the respective phase end date.</li>
+        <li>Successfull applicants must have expenses pre-approved by the Newfoundland and Labrador Association of Technology Industries.</li>
       </ul>
       <p>
         The Embryo Grant is a seed fund made available by the{' '}
@@ -91,7 +94,7 @@ const messages = {
         medical technology entrepreneurial ecosystem within the province of
         Newfoundland and Labrador. The{' '}
         <strong>Health Innovation Initiative</strong> is supported by the{' '}
-        <a href="http://www.nati.net/" target="_blank">Newfoundland Association of Technology Industries</a>, <a href="https://mce.mun.ca/" target="_blank">Memorial Centre for
+        <a href="http://www.nati.net/" target="_blank">Newfoundland and Labrador Association of Technology Industries</a>, <a href="https://mce.mun.ca/" target="_blank">Memorial Centre for
           Entrepreneurship</a>, <a href="https://www.mun.ca/" target="_blank">Memorial University of Newfoundland</a>, <a href="http://www.easternhealth.ca/" target="_blank">Eastern Health</a>,
     and the <a href="http://www.acoa-apeca.gc.ca" target="_blank">Atlantic Canada Opportunities Agency</a>.
       </p>

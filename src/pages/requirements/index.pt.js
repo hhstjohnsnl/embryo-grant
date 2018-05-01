@@ -91,7 +91,7 @@ const messages = {
         medical technology entrepreneurial ecosystem within the province of
         Newfoundland and Labrador. The{' '}
         <strong>Health Innovation Initiative</strong> is supported by the{' '}
-        <a href="http://www.nati.net/" target="_blank">Newfoundland Association of Technology Industries</a>, <a href="https://mce.mun.ca/" target="_blank">Memorial Centre for
+        <a href="http://www.nati.net/" target="_blank">Newfoundland and Labrador Association of Technology Industries</a>, <a href="https://mce.mun.ca/" target="_blank">Memorial Centre for
           Entrepreneurship</a>, <a href="https://www.mun.ca/" target="_blank">Memorial University of Newfoundland</a>, <a href="http://www.easternhealth.ca/" target="_blank">Eastern Health</a>,
     and the <a href="http://www.acoa-apeca.gc.ca" target="_blank">Atlantic Canada Opportunities Agency</a>.
       </p>
