@@ -63,7 +63,7 @@ const messages = {
         </li>
         <li>Individuals may participate in more than one team.</li>
         <li>
-          Successful applicants will form a non-for-profit or commercial
+          Successful applicants will form a not-for-profit or commercial
           corporation in the province of Newfoundland and Labrador prior to
           receiving funding. The Hacking Health St. John’s chapter will
           provide guidance.{' '}
