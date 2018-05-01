@@ -11,7 +11,7 @@ const messages = {
           Successful teams can secure up to three rounds of funding with each round worth $15,000.
         </li>
       </ul>
-      <p className="lead">Co-working space 🏢 </p>
+      <p className="lead">Co-working space 🏢 and Mentorship 👩‍🔬⚕👨</p>
       <ul>
         <li>
           Access to the Bounce Lab co-working space in the Faculty
