@@ -21,7 +21,7 @@ const messages = {
       <p className="lead">Mentorship 👩‍🔬⚕👨</p>
       <ul>
         <li>
-          Free registration to the Genesis Centre’s <a href="http://www.genesiscentre.ca/evolution-program/" target="_blank">Evolution Program</a>.
+          Free registration to the <a href="http://www.genesiscentre.ca/" target="_blank">Genesis Centre's</a> <a href="http://www.genesiscentre.ca/evolution-program/" target="_blank">Evolution Program</a>.
         </li>
         <li>
           Access to the MaRS <a href="https://www.marsdd.com/market-intelligence/" target="_blank">market intelligence</a> reporting ($50k worth of reports) exclusively via the <a href="http://www.genesiscentre.ca/" target="_blank">Genesis Centre</a>.
