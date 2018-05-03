@@ -86,6 +86,8 @@ const messages = {
         <li>Successful applicants will receive funding on a reimbursement basis for expenses incurred within the stipulated funding period (for example, an applicant awarded funding of $15,000 in phase I must incur expenses within the Phase I period between June 01 and July 31).</li>
         <li>Successfull applicants must submit expense claims within 45 days of the respective phase end date.</li>
         <li>Successfull applicants must have expenses pre-approved by the Newfoundland and Labrador Association of Technology Industries.</li>
+        <li>Faculty and staff from Memorial University interested in applying should be familiar with Memorial's <a href="http://www.mun.ca/policy/site/policy.php?id=180" target="_blank"> Conflict of Interest policy</a> and manage appropriately where applicable.</li>
+        <li>The <a href="https://www.mun.ca/research/about/ttco/" target="_blank">Technology Transfer Office</a> at Memorial University is available to review and advise regarding background Intellectual Property for students, faculty and staff in order mitigate potential future issues.</li>
       </ul>
       <p>
         The Embryo Grant is a seed fund made available by the{' '}
