@@ -57,9 +57,13 @@ const messages = {
           teams with a variety of different skill sets and strengths.
         </li>
         <li>
-          Applicants are required to have at least one relevant healthcare team
-          member. The Hacking Health St. John’s chapter will support in finding
-          a relevant healthcare team member if they do not already have one.{' '}
+          To demonstrate engagement with the local healthcare community,
+          applicants are required to have at least one healthcare team member. 
+          Healthcare team members include any collaborators from within the
+          Newfoundland and Labrador healthcare sector with relevancy to the 
+          applicant's idea. 
+          The Hacking Health St. John’s chapter will support in finding
+          a relevant healthcare team member if needed.{' '}
         </li>
         <li>Individuals may participate in more than one team.</li>
         <li>
